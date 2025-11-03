@@ -90,7 +90,7 @@ public class ChartUtils {
         BitmapEncoder.saveBitmap(chart, "charts/sort_time.png", BitmapEncoder.BitmapFormat.PNG);
     }
 
-    // ====== Styling ======
+
     private static void style(XYChart chart) {
         chart.getStyler().setLegendPosition(Styler.LegendPosition.OutsideE);
         chart.getStyler().setMarkerSize(6);
@@ -101,7 +101,6 @@ public class ChartUtils {
         chart.getStyler().setPlotBackgroundColor(java.awt.Color.WHITE);
     }
 
-    // ===== Helpers =====
     private static List<String> getVariants(List<ResultRecord> r) {
         LinkedHashSet<String> s = new LinkedHashSet<>();
         for (ResultRecord x : r) s.add(x.variant);
